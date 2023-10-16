@@ -5,14 +5,9 @@ import (
 	"io"
 )
 
-type Page struct {
-	RSS RSS `xml:"rss"`
-	Channel Channel `xml:"channel"`
-
-}
-
 type RSS struct {
 	Version string `xml:"id,version"`
+	Channel Channel `xml:"channel"`
 }
 
 type Channel struct {

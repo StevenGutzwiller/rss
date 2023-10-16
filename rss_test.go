@@ -30,7 +30,7 @@ func TestGUID(t *testing.T) {
 </channel>
 </rss>`
 	strReader := strings.NewReader(val)
-	res, err := Decode[Page](strReader)
+	res, err := Decode[RSS](strReader)
 	if err != nil {
 		t.Error(err)
 	}
